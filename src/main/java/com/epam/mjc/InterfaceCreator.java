@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 public class InterfaceCreator {
 
     public Operation<Integer> divideBy(Integer divider) {
-       return  integers -> integers.stream()
+       return  newList -> newList.stream()
                 .map(i -> i / divider)
                 .collect(Collectors.toList());
     }
